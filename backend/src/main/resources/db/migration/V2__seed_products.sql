@@ -1,0 +1,16 @@
+INSERT INTO products (name, sku, price, stock_quantity, active) VALUES
+    ('Wireless Mouse', 'WM-001', 29.99, 150, TRUE),
+    ('Mechanical Keyboard', 'KB-002', 89.99, 75, TRUE),
+    ('USB-C Hub', 'HUB-003', 49.99, 120, TRUE),
+    ('27-inch Monitor', 'MON-004', 299.99, 40, TRUE),
+    ('Laptop Stand', 'LS-005', 39.99, 200, TRUE),
+    ('Webcam HD', 'CAM-006', 59.99, 90, TRUE),
+    ('Noise-Cancelling Headphones', 'HP-007', 199.99, 55, TRUE),
+    ('External SSD 1TB', 'SSD-008', 129.99, 65, TRUE),
+    ('Desk Lamp LED', 'LMP-009', 34.99, 180, TRUE),
+    ('Ergonomic Chair', 'CHR-010', 449.99, 25, TRUE),
+    ('Standing Desk', 'DSK-011', 599.99, 15, TRUE),
+    ('Cable Organizer', 'CBL-012', 12.99, 300, TRUE),
+    ('Bluetooth Speaker', 'SPK-013', 79.99, 85, TRUE),
+    ('Phone Mount', 'MT-014', 19.99, 250, TRUE),
+    ('Portable Charger', 'PWR-015', 44.99, 110, TRUE);
