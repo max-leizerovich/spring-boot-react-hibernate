@@ -144,4 +144,13 @@ public class Product {
     public void restock(int quantity) {
         stockQuantity += quantity;
     }
+
+    /**
+     * Decreases available stock by the given amount.
+     *
+     * @param quantity units to remove
+     */
+    public void decrementStock(int quantity) {
+        stockQuantity -= quantity;
+    }
 }
