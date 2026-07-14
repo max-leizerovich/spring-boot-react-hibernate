@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { useCart } from '../hooks/useCart'
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   [
@@ -12,6 +13,8 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
  * Top navigation shell shared across pages.
  */
 export const Layout = ({ children }: { children: React.ReactNode }) => {
+  const { itemCount } = useCart()
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white">
@@ -29,6 +32,14 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
             </NavLink>
             <NavLink to="/cart" className={navLinkClass}>
               Cart
+              {itemCount > 0 && (
+                <span
+                  className="ml-1.5 inline-flex min-w-5 items-center justify-center rounded-full bg-emerald-600 px-1.5 py-0.5 text-xs font-semibold text-white"
+                  aria-label={`${itemCount} items in cart`}
+                >
+                  {itemCount}
+                </span>
+              )}
             </NavLink>
             <NavLink to="/orders" className={navLinkClass}>
               Orders
